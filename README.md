@@ -9,18 +9,29 @@ Eldritch is a community-driven dark theme inspired by Lovecraftian horror. With 
 Main Theme repo can be found [here](https://github.com/eldritch-theme/eldritch)
 
 ### Showcase
-<!-- Your screenshot should go here -->
-![Screenshot](https://github.com/user-attachments/assets/e500eeff-5cb7-4ff7-9aa6-7e23d4cacf8f)<br/>
+
+<details>
+    <summary>🦑 Cthulhu (Default)</summary>
+    <img src=".github/screenshots/cthulhu.webp" alt="Cthulhu"/>
+</details>
+<details>
+    <summary>🌀 Abyss (Darker)</summary>
+    <img src=".github/screenshots/abyss.webp" alt="Abyss"/>
+</details>
+<details>
+    <summary>🌅 Dusk (Light)</summary>
+    <img src=".github/screenshots/dusk.webp" alt="Dusk"/>
+</details>
 
 ### Installation
 
-1. Download `themes/eldritch.theme` and place it in your fish themes directory (`~/.config/fish/themes`).
-    - This can be done manually, or via installing this repo as a plugin via [fisher](https://github.com/jorgebucaran/fisher).
-2. Run the following command:
-```bash
-fish_config theme save eldritch
-```
-
-<!-- If you want to provide install from source options, you can use the following template: -->
-<!-- ### Installation From Source -->
-<!-- 1. Any instructions here -->
+1. Download your preferred palette's configuration from [themes](themes/) into `~/.config/fish/themes` or install using [fisher](https://github.com/jorgebucaran/fisher)
+   ```sh
+   fisher install eldritch-theme/fish
+   ```
+2. Set your fish theme to your chosen theme in `~/.config/fish/config.fish`:
+   ```sh
+   fish_config theme choose eldritch-cthulhu                      # Cthulhu
+   fish_config theme choose eldritch-abyss                        # Abyss
+   fish_config theme choose eldritch-cthulhu --color-theme=light  # Dusk
+   ```
